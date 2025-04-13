@@ -27,17 +27,38 @@ export default function TabLayout() {
         }),
       }}>
       <Tabs.Screen
-        name="index"
+        name="alarm"
         options={{
-          title: 'Home',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="house.fill" color={color} />,
+          title: 'Alarm',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="alarm" color={color} />,
         }}
       />
       <Tabs.Screen
-        name="explore"
+        name="clock"
         options={{
-          title: 'Explore',
-          tabBarIcon: ({ color }) => <IconSymbol size={28} name="paperplane.fill" color={color} />,
+          title: 'Clock',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="clock" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="timer"
+        options={{
+          title: 'Timer',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="timer" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="stopwatch"
+        options={{
+          title: 'Stopwatch',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="stopwatch" color={color} />,
+        }}
+      />
+      <Tabs.Screen
+        name="bedtime"
+        options={{
+          title: 'Bedtime',
+          tabBarIcon: ({ color }) => <IconSymbol size={28} name="bedtime" color={color} />,
         }}
       />
     </Tabs>
